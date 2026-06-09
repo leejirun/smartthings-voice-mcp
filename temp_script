@@ -1,0 +1,3 @@
+from smartthings.models import OvenMode, CookRecipePayload
+OvenMode.AIR_FRYER.value  # "AirFryer"
+CookRecipePayload(ovenMode=OvenMode.AIR_FRYER, ovenSetpoint=200, cookTime=1500)
