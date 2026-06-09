@@ -57,7 +57,26 @@ NoOperation | 대기 | 동작 없음 (기본값)
 
 2. Phase 3 — MCP 서버 상세 설계
 2.1 프로젝트 디렉토리 구조
-smartthings-oven-mcp/├── .env                      # PAT 토큰, Device ID 환경변수├── .env.example              # 토큰 제외한 템플릿 (Git 커밋용)├── .gitignore                # .env, __pycache__ 제외├── requirements.txt          # 의존성 목록├── main.py                   # MCP 서버 진입점├── server/│   ├── __init__.py│   ├── tools.py              # MCP Tool 정의 (핵심)│   └── prompts.py            # LLM 시스템 프롬프트├── smartthings/│   ├── __init__.py│   ├── client.py             # SmartThings API 클라이언트│   └── models.py             # 요청/응답 Pydantic 모델├── history/│   ├── __init__.py│   └── store.py              # 조리 히스토리 SQLite 저장└── tests/    ├── test_client.py    └── test_tools.py
+smartthings-voice-mcp/
+├── .env                    # 로컬만, Git 제외
+├── .env.example            # 커밋
+├── .gitignore
+├── requirements.txt
+├── main.py                 # Day 1: 빈 스텁 또는 pass만
+├── server/
+│   ├── __init__.py
+│   ├── tools.py            # 빈 스텁
+│   └── prompts.py          # 빈 스텁
+├── smartthings/
+│   ├── __init__.py
+│   ├── client.py           # 빈 스텁
+│   └── models.py           # 빈 스텁
+├── history/
+│   ├── __init__.py
+│   └── store.py            # 빈 스텁
+└── tests/
+    ├── __init__.py
+    └── test_client.py      # 빈 스텁
 
 
 2.2 MCP Tool 상세 명세
